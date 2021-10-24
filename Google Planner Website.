@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Tasks.png" type="image/x-icon">
+    <base href="" target="_blank">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Planner</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <div class="header-left__burger">
+                <span class="material-icons">menu</span>
+            </div>
+            <div class="header-left__logo">
+                <span class="logo-first">Google</span>
+                <span class="logo-last">Planner</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav__links">
+                        <a href="" class="header-nav__link">
+                            <span class="header-nav-link__icon material-icons" id="light">light_mode</span>
+                            <span class="header-nav-link__icon material-icons" id="dark">dark_mode</span>
+                        </a>
+                    </li>
+                    <li class="header-nav__links">
+                        <a href="" class="header-nav__link">
+                            <span class="header-nav-link__icon material-icons">file_upload</span>
+                            <span class="header-nav-link__name">Upload</span>
+                        </a>
+                    </li>
+                    <li class="header-nav__links">
+                        <a href="" class="header-nav__link">
+                            <span class="header-nav-link__icon material-icons">help_outline</span>
+                            <span class="header-nav-link__name">Help</span>
+                        </a>
+                    </li>
+                    <li class="header-nav__links">
+                        <a href="" class="header-nav__link" id="apps">
+                            <span class="header-nav-link__icon material-icons">apps</span>
+                        </a>
+                    </li>
+                    <li class="header-nav__links">
+                        <a href="" class="header-nav__link">
+                            <span class="header-nav-link__icon material-icons">more_vert</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="aside">
+        <div class="side-bar">
+            <ul class="side-bar__list">
+                <li class="side-bar__links">
+                    <a href="" class="side-bar__link side-bar__link__highlight">
+                        <span class="side-bar__link__icon material-icons">date_range</span>
+                        <span class="side-bar__link__label">Calendar</span>
+                    </a>
+                </li>
+                <li class="side-bar__links">
+                    <a href="" class="side-bar__link">
+                        <span class="side-bar__link__icon material-icons">event</span>
+                        <span class="side-bar__link__label">Events</span>
+                    </a>
+                </li>
+                <li class="side-bar__links">
+                    <a href="" class="side-bar__link">
+                        <span class="side-bar__link__icon material-icons">edit</span>
+                        <span class="side-bar__link__label">Notes</span>
+                    </a>
+                </li>
+                <li class="side-bar__links">
+                    <a href="" class="side-bar__link">
+                        <span class="side-bar__link__icon material-icons">task_alt</span>
+                        <span class="side-bar__link__label">Tasks</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="social-handle">
+            <div class="social-handle__container">
+                <a href="https://github.com/akshatmittal61" class="social-handle__link">Github</a>
+            </div>
+            <div class="social-handle__container">
+                <a href="https://www.instagram.com/akshatmittal61/" class="social-handle__link">Instagram</a>
+            </div>
+            <div class="social-handle__container">
+                <a href="https://api.whatsapp.com/send/?phone=919456849466" class="social-handle__link">Contact Me</a>
+            </div>
+        </div>
+    </div>
+    <main class="main show-calendar">
+        <div class="main-child main-child__calendar">
+            <div class="wrapper">
+                <div class="head">
+                    <div class="detail">
+                        <h1 class="year"><span class="month">January</span> <span id="year">2001</span></h1>
+                        <span class="dispn" id="month">1</span>
+                    </div>
+                    <div class="arrows">
+                        <span class="material-icons back">arrow_back_ios</span>
+                        <span class="material-icons forward">arrow_forward_ios</span>
+                    </div>
+                </div>
+                <div class="calendar">
+                    <div class="day-row">
+                        <span class="day">Mon</span>
+                        <span class="day">Tue</span>
+                        <span class="day">Wed</span>
+                        <span class="day">Thu</span>
+                        <span class="day">Fri</span>
+                        <span class="day">Sat</span>
+                        <span class="day">Sun</span>
+                    </div>
+                    <div class="cal-row">
+                        <span class="cal-date _0"></span>
+                        <span class="cal-date _1"></span>
+                        <span class="cal-date _2"></span>
+                        <span class="cal-date _3"></span>
+                        <span class="cal-date _4"></span>
+                        <span class="cal-date _5"></span>
+                        <span class="cal-date _6"></span>
+                    </div>
+                    <div class="cal-row">
+                        <span class="cal-date _7"></span>
+                        <span class="cal-date _8"></span>
+                        <span class="cal-date _9"></span>
+                        <span class="cal-date _10"></span>
+                        <span class="cal-date _11"></span>
+                        <span class="cal-date _12"></span>
+                        <span class="cal-date _13"></span>
+                    </div>
+                    <div class="cal-row">
+                        <span class="cal-date _14"></span>
+                        <span class="cal-date _15"></span>
+                        <span class="cal-date _16"></span>
+                        <span class="cal-date _17"></span>
+                        <span class="cal-date _18"></span>
+                        <span class="cal-date _19"></span>
+                        <span class="cal-date _20"></span>
+                    </div>
+                    <div class="cal-row">
+                        <span class="cal-date _21"></span>
+                        <span class="cal-date _22"></span>
+                        <span class="cal-date _23"></span>
+                        <span class="cal-date _24"></span>
+                        <span class="cal-date _25"></span>
+                        <span class="cal-date _26"></span>
+                        <span class="cal-date _27"></span>
+                    </div>
+                    <div class="cal-row">
+                        <span class="cal-date _28"></span>
+                        <span class="cal-date _29"></span>
+                        <span class="cal-date _30"></span>
+                        <span class="cal-date _31"></span>
+                        <span class="cal-date _32"></span>
+                        <span class="cal-date _33"></span>
+                        <span class="cal-date _34"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="reach-date-frame-container reach-date-frame-container__hide">
+                <div class="reach-date-frame">
+                    <div class="close-button-bar"><span class="material-icons close-button">close</span></div>
+                    <div class="date-selector">
+                        <form class="reach-date-frame__date-selector">
+                            <label for="reach-date__month" class="reach-date__month-label">Enter Month</label>
+                            <input type="month" name="reach-date__month" id="reach-date__month"
+                                class="reach-date__month">
+                        </form>
+                    </div>
+                    <div class="foot">
+                        <span class="btn cancel">Cancel</span>
+                        <span class="btn btn-fill ok">OK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-child main-child__events dispn">
+            <div class="wrapper">
+                <div class="no-events dispn">
+                    <div class="no-events__label">
+                        <span class="no-events__symbol material-icons">event_busy</span>
+                        <span class="no-events__text">No Upcoming Events</span>
+                    </div>
+                    <div class="no-events-add">
+                        <div class="btn no-events-add__button">Add an Event Now</div>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-card">
+                            <div class="event-card-container">
+                                <div class="event-card-container__img event-card-container__birthday"></div>
+                                <div class="event-card-container__text">
+                                    <div class="event-card-container__title">
+                                        Akshat Mittal
+                                    </div>
+                                    <div class="event-card-container__schedule">
+                                        <div class="event-card-container__schedule__Date">
+                                            <span class="event-card-container__schedule__Date__date">25</span>
+                                            <span class="event-card-container__schedule__Date__month">June</span>
+                                            <span class="event-card-container__schedule__Date_year">2002</span>
+                                        </div>
+                                        <div class="event-card-container__schedule__Time">
+                                            <span class="event-card-container__schedule__Time__hour">06</span>:
+                                            <span class="event-card-container__schedule__Time__min">00</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-card-container__description">
+                                        Akshat Mittal's Birthday
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-card">
+                            <div class="event-card-container">
+                                <div class="event-card-container__img event-card-container__meeting">
+                                    <!-- <img src="./images/birthday.jpg" alt="Birthday"> -->
+                                </div>
+                                <div class="event-card-container__text">
+                                    <div class="event-card-container__title">
+                                        Google I/O keynote
+                                    </div>
+                                    <div class="event-card-container__schedule">
+                                        <div class="event-card-container__schedule__Date">
+                                            <span class="event-card-container__schedule__Date__date">18</span>
+                                            <span class="event-card-container__schedule__Date__month">May</span>
+                                            <span class="event-card-container__schedule__Date_year">2021</span>
+                                        </div>
+                                        <div class="event-card-container__schedule__Time">
+                                            <span class="event-card-container__schedule__Time__hour">22</span>:
+                                            <span class="event-card-container__schedule__Time__min">30</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-card-container__description">
+                                        Google I/O is back May 18-20, online, and free for everyone. Join us live. I/O
+                                        is live keynotes, hands-on learning with Google experts, and a first look at the
+                                        latest developer products. Make sure to check back for more updates!
+                                        <br>
+                                        <a href="https://events.google.com/io" class="event-card-container__link">More
+                                            details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-card">
+                            <div class="event-card-container">
+                                <div class="event-card-container__img event-card-container__festival">
+                                    <!-- <img src="./images/birthday.jpg" alt="Birthday"> -->
+                                </div>
+                                <div class="event-card-container__text">
+                                    <div class="event-card-container__title">
+                                        Independence Day
+                                    </div>
+                                    <div class="event-card-container__schedule">
+                                        <div class="event-card-container__schedule__Date">
+                                            <span class="event-card-container__schedule__Date__date">15</span>
+                                            <span class="event-card-container__schedule__Date__month">August</span>
+                                            <span class="event-card-container__schedule__Date_year">1947</span>
+                                        </div>
+                                        <div class="event-card-container__schedule__Time">
+                                            <span class="event-card-container__schedule__Time__hour">22</span>:
+                                            <span class="event-card-container__schedule__Time__min">30</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-card-container__description">
+                                        India got Independence from British Rule on 15 August 1947.
+                                        <br>
+                                        The <em>Tiranga</em> is hosted on the Red Fort by the Prime Minister.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-card">
+                            <div class="event-card-container">
+                                <div class="event-card-container__img event-card-container__anniversary"></div>
+                                <div class="event-card-container__text">
+                                    <div class="event-card-container__title">
+                                        Zayn + Gigi
+                                    </div>
+                                    <div class="event-card-container__schedule">
+                                        <div class="event-card-container__schedule__Date">
+                                            <span class="event-card-container__schedule__Date__date">9</span>
+                                            <span class="event-card-container__schedule__Date__month">November</span>
+                                            <span class="event-card-container__schedule__Date_year">2015</span>
+                                        </div>
+                                        <div class="event-card-container__schedule__Time">
+                                            <span class="event-card-container__schedule__Time__hour">06</span>:
+                                            <span class="event-card-container__schedule__Time__min">00</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-card-container__description">
+                                        Zayn Malik and Gigi Hadid's anniversary
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-card">
+                            <div class="event-card-container">
+                                <div class="event-card-container__img event-card-container__meeting"></div>
+                                <div class="event-card-container__text">
+                                    <div class="event-card-container__title">
+                                        Meeting
+                                    </div>
+                                    <div class="event-card-container__schedule">
+                                        <div class="event-card-container__schedule__Date">
+                                            <span class="event-card-container__schedule__Date__date">10</span>
+                                            <span class="event-card-container__schedule__Date__month">August</span>
+                                            <span class="event-card-container__schedule__Date_year">2021</span>
+                                        </div>
+                                        <div class="event-card-container__schedule__Time">
+                                            <span class="event-card-container__schedule__Time__hour">17</span>:
+                                            <span class="event-card-container__schedule__Time__min">30</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-card-container__description">
+                                        Club meeting with Dr. Vikram Rathore
+                                        <br>
+                                        <a href="https://meet.google.com/"
+                                            class="event-card-container__link">Join Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-event-frame-container add-event-frame-container__hide">
+                    <div class="add-event-frame">
+                        <div class="close-button-bar"><span class="material-icons close-button">close</span></div>
+                        <div class="event-details">
+                            <form action="" class="form">
+                                <div class="form-group">
+                                    <label for="add-event__title"
+                                        class="form-text__label add-event__title__label">Title: </label>
+                                    <input type="text" class="form-text add-event__title" id="add-event__title"
+                                        placeholder="Enter title" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="add-event__type" class="add-event__type form-radio__label">Type:
+                                    </label>
+                                    <input type="radio" class="form-radio add-event__type__label" id="birthday"
+                                        placeholder="Birthday" name="type">
+                                    <label for="birthday" class="form-radio__label">Birthday</label>
+                                    <input type="radio" class="form-radio add-event__type__label" id="ceremony"
+                                        placeholder="Ceremony" name="type">
+                                    <label for="ceremony" class="form-radio__label">Ceremony</label>
+                                    <input type="radio" class="form-radio add-event__type__label" id="festival"
+                                        placeholder="Festival" name="type">
+                                    <label for="festival" class="form-radio__label">Festival</label>
+                                    <input type="radio" class="form-radio add-event__type__label" id="meeting"
+                                        placeholder="Meeting" name="type">
+                                    <label for="meeting" class="form-radio__label">Meeting</label>
+                                    <input type="radio" class="form-radio add-event__type__label" id="other"
+                                        placeholder="Other" name="type">
+                                    <label for="other" class="form-radio__label">Other: </label>
+                                    <input type="text" class="form-text add-event__other" id="add-event__other"
+                                        placeholder="Enter other type" name="type">
+                                </div>
+                                <div class="form-group">
+                                    <label for="add-event__date" class="form-text__label add-event__date__label">Date:
+                                    </label>
+                                    <input type="date" class="form-text add-event__date" id="add-event__date"
+                                        placeholder="Enter date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="add-event__time" class="form-text__label add-event__time__label">Time:
+                                    </label>
+                                    <input type="time" class="form-text add-event__time" id="add-event__time"
+                                        placeholder="Enter time">
+                                </div>
+                                <div class="form-group">
+                                    <label for="add-event__description"
+                                        class="form-text__label add-event__description__label">Description: </label>
+                                    <textarea class="form-text add-event__description"
+                                        id="add-event__description" placeholder="Enter Description"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="add-event__link" class="form-text__label add-event__link__label">Link:
+                                    </label>
+                                    <input type="url" class="form-text add-event__link" id="add-event__link"
+                                        placeholder="Enter link (if any)">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="foot">
+                            <span class="btn cancel">Cancel</span>
+                            <span class="btn btn-fill ok">OK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-child main-child__notes dispn">
+            <div class="wrapper">
+                <div class="no-notes dispn">
+                    <div class="no-notes__label">
+                        <span class="no-notes__symbol material-icons">edit_note</span>
+                        <span class="no-notes__text">No Note created</span>
+                    </div>
+                    <div class="no-notes-add">
+                        <div class="btn no-notes-add__button">Add a note now</div>
+                    </div>
+                </div>
+                <div class="notes">
+                    <div class="note">
+                        <div class="note-card">
+                            <div class="note-card-container">
+                                <div class="note-card-container__content">
+                                    <div class="note-card-container__img">
+                                        <img src="" alt="" class="note-card-container__img__image">
+                                    </div>
+                                    <div class="note-card-container__title">Google I/O</div>
+                                    <div class="note-card-container__description">
+                                        Google I/O is back May 18-20, online, and free for everyone. Join us live. I/O
+                                        is live keynotes, hands-on learning with Google experts, and a first look at the
+                                        latest developer products. Make sure to check back for more updates!
+                                        <a href="https://events.google.com/io" class="note-card-container__link">Google
+                                            I/O</a>
+                                    </div>
+                                </div>
+                                <div class="note-card-container__controls">
+                                    <div class="note-card-container__control material-icons note-palette">palette</div>
+                                    <div class="note-card-container__control material-icons note-copy">content_copy</div>
+                                    <div class="note-card-container__control material-icons note-share">share</div>
+                                    <div class="note-card-container__control material-icons note-delete">delete</div>
+                                </div>
+                                <div class="note-color-frame-container note-color-frame-container__hide">
+                                    <div class="note-color-frame">
+                                        <div class="note-color-frame__color-palette">
+                                            <!-- <div class="note-color-frame__color"><span class="material-icons"></span></div> -->
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons">done</span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="foot">
+                                            <span class="btn btn-fill ok">OK</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note">
+                        <div class="note-card">
+                            <div class="note-card-container">
+                                <div class="note-card-container__content">
+                                    <div class="note-card-container__img">
+                                        <img src="" alt="" class="note-card-container__img__image">
+                                    </div>
+                                    <div class="note-card-container__title">Whack A Mole Launch</div>
+                                    <div class="note-card-container__description">
+                                        I have been making a game of Whack a mole since a while now. I have used good
+                                        amount of functions there. requestAnimationFrame() being one of the most useful
+                                        function. Now the game is working pretty fine. Although I have hosted it on
+                                        Github pages, today my friend showed me a bug, real bummer. When a user hits a
+                                        dead mole, the score keeps increasing. Also you have to kill a mole even after
+                                        the timer is out. Those two are real good bugs. I'll have to remove them by
+                                        tonight. My Gole !!
+                                        <a href="https://akshatmittal61.github.io/Whack-A-Mole"
+                                            class="note-card-container__link">Google I/O</a>
+                                    </div>
+                                </div>
+                                <div class="note-card-container__controls">
+                                    <div class="note-card-container__control material-icons note-palette">palette</div>
+                                    <div class="note-card-container__control material-icons note-copy">content_copy</div>
+                                    <div class="note-card-container__control material-icons note-share">share</div>
+                                    <div class="note-card-container__control material-icons note-delete">delete</div>
+                                </div>
+                                <div class="note-color-frame-container note-color-frame-container__hide">
+                                    <div class="note-color-frame">
+                                        <div class="note-color-frame__color-palette">
+                                            <!-- <div class="note-color-frame__color"><span class="material-icons"></span></div> -->
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons">done</span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="foot">
+                                            <span class="btn btn-fill ok">OK</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note">
+                        <div class="note-card">
+                            <div class="note-card-container">
+                                <div class="note-card-container__content">
+                                    <div class="note-card-container__img">
+                                        <img src="" alt="" class="note-card-container__img__image">
+                                    </div>
+                                    <div class="note-card-container__title">React JS</div>
+                                    <div class="note-card-container__description">
+                                        I have to study React JS next
+                                        <a href="" class="note-card-container__link"></a>
+                                    </div>
+                                </div>
+                                <div class="note-card-container__controls">
+                                    <div class="note-card-container__control material-icons note-palette">palette</div>
+                                    <div class="note-card-container__control material-icons note-copy">content_copy</div>
+                                    <div class="note-card-container__control material-icons note-share">share</div>
+                                    <div class="note-card-container__control material-icons note-delete">delete</div>
+                                </div>
+                                <div class="note-color-frame-container note-color-frame-container__hide">
+                                    <div class="note-color-frame">
+                                        <div class="note-color-frame__color-palette">
+                                            <!-- <div class="note-color-frame__color"><span class="material-icons"></span></div> -->
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons">done</span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                            <div class="note-color-frame__color">
+                                                <div class="note-color-frame__color-circle">
+                                                    <span class="material-icons"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="foot">
+                                            <span class="btn btn-fill ok">OK</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="add-note-frame-container add-note-frame-container__hide">
+                    <div class="add-note-frame">
+                        <div class="close-button-bar"><span class="material-icons close-button">close</span></div>
+                        <div class="note-details">
+                            <form action="" class="form">
+                                <div class="form-group form-group__title">
+                                    <label for="add-note__title"
+                                        class="form-text__label add-note__title__label"></label>
+                                    <input type="text" class="form-text add-note__title" id="add-note__title"
+                                        placeholder="Title">
+                                </div>
+                                <div class="form-group form-group__note">
+                                    <label for="add-note__content"
+                                        class="form-text__label add-note__content__label"></label>
+                                    <textarea class="form-text add-note__content"
+                                        id="add-note__content" placeholder="Your Note Here" required></textarea>
+                                </div>
+                                <div class="form-group form-group__link">
+                                    <label for="add-note__link" class="form-text__label add-note__link__label"></label>
+                                    <input type="url" class="form-text add-note__link" id="add-note__link"
+                                        placeholder="Enter link (if any)">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="foot">
+                            <span class="btn cancel">Cancel</span>
+                            <span class="btn btn-fill ok">OK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-child main-child__tasks dispn">
+            <div class="wrapper">
+                <div class="no-tasks dispn">
+                    <div class="no-tasks__label">
+                        <span class="no-tasks__symbol material-icons">task</span>
+                        <span class="no-tasks__text">No Tasks</span>
+                    </div>
+                    <div class="no-tasks-add">
+                        <div class="btn no-tasks-add__button">Add a new task now</div>
+                    </div>
+                </div>
+                <div class="tasks">
+                    <div class="task">
+                        <div class="task-card">
+                            <div class="task-card-container">
+                                <div class="task-card-container__content">
+                                    <div class="task-card-container__title">Google I/O</div>
+                                    <div class="task-card-container__details dispn">
+                                        Google I/O is back May 18-20, online, and free for everyone. Join us live. I/O
+                                        is live keynotes, hands-on learning with Google experts, and a first look at the
+                                        latest developer products. Make sure to check back for more updates!
+                                        <a href="https://events.google.com/io" class="task-card-container__link">Google I/O</a>
+                                    </div>
+                                    <div class="task-card-container__schedule btn btn-outline">
+                                        <div class="task-card-container__schedule__Date">
+                                            <span class="task-card-container__schedule__Date__date">16</span>
+                                            <span class="task-card-container__schedule__Date__month">May</span>
+                                            <span class="task-card-container__schedule__Date_year">2021</span>
+                                        </div>, 
+                                        <div class="task-card-container__schedule__Time">
+                                            <span class="task-card-container__schedule__Time__hour">22</span>:
+                                            <span class="task-card-container__schedule__Time__min">30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-card-container__controls">
+                                    <div class="task-card-container__control material-icons task-palette">done</div>
+                                    <div class="task-card-container__control material-icons task-delete">delete</div>
+                                </div>
+                                <div class="foot dispn">
+                                    <span class="btn cancel">Cancel</span>
+                                    <span class="btn btn-fill ok">OK</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="task-card">
+                            <div class="task-card-container">
+                                <div class="task-card-container__content">
+                                    <div class="task-card-container__title">Practicum Viva</div>
+                                    <div class="task-card-container__details dispn">
+                                        <a href="https://meet.google.com/io" class="task-card-container__link">Join Now</a>
+                                    </div>
+                                    <div class="task-card-container__schedule btn btn-outline">
+                                        <div class="task-card-container__schedule__Date">
+                                            <span class="task-card-container__schedule__Date__date">18</span>
+                                            <span class="task-card-container__schedule__Date__month">October</span>
+                                            <span class="task-card-container__schedule__Date_year">2021</span>
+                                        </div>, 
+                                        <div class="task-card-container__schedule__Time">
+                                            <span class="task-card-container__schedule__Time__hour">15</span>:
+                                            <span class="task-card-container__schedule__Time__min">30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-card-container__controls">
+                                    <div class="task-card-container__control material-icons task-palette">done</div>
+                                    <div class="task-card-container__control material-icons task-delete">delete</div>
+                                </div>
+                                <div class="foot dispn">
+                                    <span class="btn cancel">Cancel</span>
+                                    <span class="btn btn-fill ok">OK</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="task-card">
+                            <div class="task-card-container">
+                                <div class="task-card-container__content">
+                                    <div class="task-card-container__title">Buy groceries</div>
+                                    <div class="task-card-container__details dispn">
+                                        <a href="" class="task-card-container__link"></a>
+                                    </div>
+                                    <div class="task-card-container__schedule btn btn-outline">
+                                        <div class="task-card-container__schedule__Date">
+                                            <span class="task-card-container__schedule__Date__date">16</span>
+                                            <span class="task-card-container__schedule__Date__month">August</span>
+                                            <span class="task-card-container__schedule__Date_year">2021</span>
+                                        </div>, 
+                                        <div class="task-card-container__schedule__Time">
+                                            <span class="task-card-container__schedule__Time__hour">16</span>:
+                                            <span class="task-card-container__schedule__Time__min">30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-card-container__controls">
+                                    <div class="task-card-container__control material-icons task-palette">done</div>
+                                    <div class="task-card-container__control material-icons task-delete">delete</div>
+                                </div>
+                                <div class="foot dispn">
+                                    <span class="btn cancel">Cancel</span>
+                                    <span class="btn btn-fill ok">OK</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-task-frame-container add-task-frame-container__hide">
+                    <div class="add-task-frame">
+                        <div class="close-button-bar"><span class="material-icons close-button">close</span></div>
+                        <div class="task-details">
+                            <form action="" class="form">
+                                <div class="form-group form-group__title">
+                                    <label for="add-task__title"
+                                        class="form-text__label add-task__title__label"></label>
+                                    <input type="text" class="form-text add-task__title" id="add-task__title"
+                                        placeholder="Title" required>
+                                </div>
+                                <div class="form-group form-group__task">
+                                    <label for="add-task__content"
+                                        class="form-text__label add-task__content__label"></label>
+                                    <textarea class="form-text add-task__content"
+                                        id="add-task__content" placeholder="Task Description"></textarea>
+                                </div>
+                                <div class="form-group form-group__date">
+                                    <label for="add-event__date" class="form-text__label add-event__date__label"></label>
+                                    <input type="date" class="form-text add-event__date" id="add-event__date"
+                                        placeholder="Enter date" required>
+                                </div>
+                                <div class="form-group form-group__time">
+                                    <label for="add-event__time" class="form-text__label add-event__time__label"></label>
+                                    <input type="time" class="form-text add-event__time" id="add-event__time"
+                                        placeholder="Enter time">
+                                </div>
+                                <div class="form-group form-group__link">
+                                    <label for="add-task__link" class="form-text__label add-task__link__label"></label>
+                                    <input type="url" class="form-text add-task__link" id="add-task__link"
+                                        placeholder="Enter link (if any)">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="foot">
+                            <span class="btn cancel">Cancel</span>
+                            <span class="btn btn-fill ok">OK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="app-frame dispn">
+        <div class="app-container" id="app-container">
+            <div class="app-box" id="app-box">
+                <a href="https://akshatmittal61.github.io/calendar" class="app-card">
+                    <div class="app-img">
+                        <img src="https://akshatmittal61.github.io/calendar/images/favicon.png" alt="" class="app-icon">
+                    </div>
+                    <div class="app-name">Calendar</div>
+                </a>
+            </div>
+        </div>
+        <div class="app-container" id="app-container">
+            <div class="app-box" id="app-box">
+                <a href="https://akshatmittal61.github.io/Whack-A-Mole" class="app-card">
+                    <div class="app-img">
+                        <img src="https://akshatmittal61.github.io/Whack-A-Mole/images/hammer-original.png" alt=""
+                            class="app-icon">
+                    </div>
+                    <div class="app-name">Whack A Mole</div>
+                </a>
+            </div>
+        </div>
+        <div class="app-container" id="app-container">
+            <div class="app-box" id="app-box">
+                <a href="https://akshatmittal61.github.io/upsida" class="app-card">
+                    <div class="app-img">
+                        <img src="https://akshatmittal61.github.io/upsida/images/favicon.ico" alt="" class="app-icon">
+                    </div>
+                    <div class="app-name">UPSIDA</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="fab">
+        <div class="fab-container">
+            <div class="fab-button">
+                <span class="fab-icon material-icons">edit_calendar</span>
+            </div>
+        </div>
+    </div>
+    <script src="./theme.js"></script>
+    <script src="./calendar.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
